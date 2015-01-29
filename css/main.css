@@ -17,3 +17,36 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+    background-color: #CC6633;
+    margin-top: 
+
+}
+
+h1 {
+    text-align: center;
+}
+
+ul
+{
+list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+.logo {
+    margin: 0 0.2em 0 0;
+    width: 1.2em;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+
