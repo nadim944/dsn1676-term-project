@@ -22,11 +22,16 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-
 }
 
 h1 {
     text-align: center;
+     transform: translateY(60px) 
+}
+.subhead{
+    position: relative;
+    top: 2em;
+ 
 }
 
 ul
@@ -44,16 +49,22 @@ a:visited {
 
 .banner {
     width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
     background-color: #CC6633;
     text-align: center;
+    position: relative;
+    min-height: 300px;
 }
 
 .logo {
     position:absolute;
+    text-align: center;
     height: 50px;
     top:0;
-    left:50%;
-    transform: translateX(-50%);
+    left:50%; 
+     transform: translateX(-50%); 
 }
 
 
@@ -61,7 +72,7 @@ a:visited {
     position: absolute;
     width: 30%;
     
-    top: 25%;
+    top: 49px;
     left: calc(50%);
 }
 
