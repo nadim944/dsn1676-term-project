@@ -27,7 +27,8 @@ body {
 h1 {
     text-align: center;
     position: relative;
-     transform: translateY(60px)
+    -webkit-transform: translateY(60px)
+    transform: translateY(60px)
 }
 
 .subhead{
@@ -60,8 +61,7 @@ a:visited {
 }
 
 .circle:hover {
-    border-radius:50%;
-    
+    border-radius:50%;   
 }
 
 .logo {
@@ -70,13 +70,66 @@ a:visited {
     height: 50px;
     top: 30px;
     left:50%; 
+    -webkit-transform: translateX(-50%); 
     transform: translateX(-50%); 
     width: 150%;
 }
 
 .logo:hover {
     opacity: .5;
+    -webkit-transition: all 1000ms;
     transition: all 1000ms;
+}
+
+.play-button {
+    text-align: center;
+    top: 10px;
+    width: 20%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    -webkit-animation: bounce 1s alternate infinite;
+    animation: bounce 1s alternate infinite;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        transform: translateY(6px)
+    }
+    
+    100% {
+        transform: translateY(-6px)
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(6px)
+    }
+    
+    100% {
+        transform: translateY(-6px)
+    }
+}
+
+@media only screen and (min-width: 38em) {
+    
+.play-button {
+    width: 8%;
+}
+
+}
+@media only screen and (min-width: 60em) {
+
+.play-button {
+    width: 7%;
+    }
+}
+
+@media only screen and (min-width: 90em) {
+
+.play-button {
+    width: 6%;
+    }
 }
 
 .bar-wrapper {
@@ -98,7 +151,8 @@ a:visited {
     bottom: 1px;
     height: 3px;
     position: absolute;
-    width: 3px;      
+    width: 3px;   
+    -webkit-animation: sound 0ms -800ms linear infinite alternate;
     animation: sound 0ms -800ms linear infinite alternate;
 }
 
@@ -124,8 +178,6 @@ a:visited {
 .bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
 .bar:nth-child(10) { left: 37px; animation-duration: 442ms; }​
 
- 
-
 @-webkit-keyframes shake { 
     0%, 100% {-webkit-transform: translateX(0);} 
     10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);} 
@@ -136,8 +188,3 @@ a:visited {
     10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
     20%, 40%, 60%, 80% {transform: translateX(10px);} 
 } 
-
-@media only screen and (min-width: 22em) (}
-@media only screen and (min-width: 50em) (}
-@media only screen and (min-width: 60em) (}
-
