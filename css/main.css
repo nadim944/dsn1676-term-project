@@ -157,6 +157,17 @@ a:visited {
     animation: sound 0ms -800ms linear infinite alternate;
 }
 
+@-webkit-keyframes sound {
+    0% {
+       opacity: .35;
+        height: 3px; 
+    }
+    100% {
+        opacity: 1;       
+        height: 50px;        
+    }
+}
+
 @keyframes sound {
     0% {
        opacity: .35;
@@ -168,24 +179,62 @@ a:visited {
     }
 }
 
-.bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
-.bar:nth-child(2)  { left: 5px; animation-duration: 433ms; }
-.bar:nth-child(3)  { left: 9px; animation-duration: 407ms; }
-.bar:nth-child(4)  { left: 13px; animation-duration: 458ms; }
-.bar:nth-child(5)  { left: 17px; animation-duration: 400ms; }
-.bar:nth-child(6)  { left: 21px; animation-duration: 427ms; }
-.bar:nth-child(7)  { left: 25px; animation-duration: 441ms; }
-.bar:nth-child(8)  { left: 29px; animation-duration: 419ms; }
-.bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
-.bar:nth-child(10) { left: 37px; animation-duration: 442ms; }​
+.bar:nth-child(1)  {
+    left: 1px;
+    -webkit-animation-duration: 474ms;
+    animation-duration: 474ms;
+}
 
-@-webkit-keyframes shake { 
-    0%, 100% {-webkit-transform: translateX(0);} 
-    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);} 
-    20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);} 
-} 
-@keyframes shake { 
-    0%, 100% {transform: translateX(0);} 
-    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
-    20%, 40%, 60%, 80% {transform: translateX(10px);} 
-} 
+.bar:nth-child(2)  { 
+    left: 5px; 
+    -webkit-animation-duration: 433ms;
+    animation-duration: 433ms; 
+}
+
+.bar:nth-child(3)  { 
+    left: 9px;
+    -webkit-animation-duration: 407ms;
+    animation-duration: 407ms; 
+}
+
+.bar:nth-child(4)  { 
+    left: 13px; 
+    -webkit-animation-duration: 458ms; 
+    animation-duration: 458ms; 
+}
+
+.bar:nth-child(5)  { 
+    left: 17px; 
+    -webkit-animation-duration: 400ms;
+    animation-duration: 400ms;
+}
+
+.bar:nth-child(6)  { 
+    left: 21px; 
+    -webkit-animation-duration: 427ms;
+    animation-duration: 427ms; 
+}
+
+.bar:nth-child(7)  { 
+    left: 25px; 
+    -webkit-animation-duration: 441ms;
+    animation-duration: 441ms; 
+}
+
+.bar:nth-child(8)  { 
+    left: 29px; 
+    -webkit-animation-duration: 419ms; 
+    animation-duration: 419ms; 
+}
+
+.bar:nth-child(9)  { 
+    left: 33px; 
+    -webkit-animation-duration: 487ms; 
+    animation-duration: 487ms; 
+}
+
+.bar:nth-child(10) { 
+    left: 37px; 
+    -webkit-animation-duration: 442ms; 
+    animation-duration: 442ms; 
+}
