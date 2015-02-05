@@ -26,7 +26,8 @@ body {
 
 h1 {
     text-align: center;
-     transform: translateY(60px) 
+    position: relative;
+     transform: translateY(60px)
 }
 
 .subhead{
@@ -35,8 +36,7 @@ h1 {
     padding: 1rem;
 }
 
-ul
-{
+ul {
 list-style-type: none;
 }
 
@@ -59,6 +59,11 @@ a:visited {
     min-height: 300px;
 }
 
+.circle:hover {
+    border-radius:50%;
+    
+}
+
 .logo {
     position: absolute;
     text-align: center;
@@ -69,10 +74,15 @@ a:visited {
     width: 150%;
 }
 
+.logo:hover {
+    opacity: .5;
+    transition: all 1000ms;
+}
+
 .bar-wrapper {
     position: absolute;
     width: 30%;
-    top: 80px;
+    top: 79px;
     left: calc(50%);
 }
 
@@ -80,13 +90,7 @@ a:visited {
     position: absolute;
     top: 30px;
     height: 30px;
-    width: 40px;
-/*    left: 100px;*/
-/*    margin: -30px 0 0 -20px;*/
-    
-/*    top: -25%;*/
-   
-    
+    width: 40px;    
 }
 
 .bar {
@@ -120,5 +124,20 @@ a:visited {
 .bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
 .bar:nth-child(10) { left: 37px; animation-duration: 442ms; }​
 
+ 
 
+@-webkit-keyframes shake { 
+    0%, 100% {-webkit-transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);} 
+} 
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+} 
+
+@media only screen and (min-width: 22em) (}
+@media only screen and (min-width: 50em) (}
+@media only screen and (min-width: 60em) (}
 
