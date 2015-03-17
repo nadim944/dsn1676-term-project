@@ -238,3 +238,36 @@ a:visited {
     -webkit-animation-duration: 442ms; 
     animation-duration: 442ms; 
 }
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited {
+	height: 45px;
+    width: 45px;
+	overflow: hidden;
+    position: absolute;
+    top: 24px;
+    left: 3%;
+	background: transparent url("../images/icon-nav.svg") no-repeat 0 0;
+	text-indent: 100%;
+	white-space: nowrap; 
+    z-index: 1;
+}
+
+.panel {
+    display: none;
+}
+
+.panel ul {
+    margin-left: 3em;
+}
+
+.panel ul li {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.js-panel-open {
+    display: block;
+}
