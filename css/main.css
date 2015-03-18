@@ -242,16 +242,17 @@ a:visited {
 .nav-btn,
 .nav-btn:link,
 .nav-btn:visited {
-	height: 45px;
-    width: 45px;
+	height: 40px;
+    width: 40px;
 	overflow: hidden;
     position: absolute;
     top: 24px;
     left: 3%;
-	background: transparent url("../images/icon-nav.svg") no-repeat 0 0;
+	background: url("../images/icon-nav.svg") no-repeat;
 	text-indent: 100%;
 	white-space: nowrap; 
     z-index: 1;
+    border: none;
 }
 
 .panel {
@@ -262,10 +263,11 @@ a:visited {
     margin-left: 3em;
 }
 
-.panel ul li {
+.panel a {
     display: inline-block;
     margin: 0.5em;
     padding: 0.5em;
+    color: black;
 }
 
 .js-panel-open {
