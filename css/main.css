@@ -31,7 +31,7 @@ h1 {
     transform: translateY(60px);
 }
 
-.subhead{
+.subhead {
     position: relative;
     top: 2em;
     padding: 1rem;
@@ -363,13 +363,14 @@ a:visited {
 
 .fast-forward-btn {
     max-width: 30%;
-    position: relative;
-    right: 85px;
+    -webkit-transform: translateX(-125%);
+    transform: translateX(-125%);
 }
 
 .move {
-    right: -80px;
-    transition: all 200ms linear;
+    margin-right: -200px;
+    -webkit-transition: all 55ms linear;
+    transition: all 55ms linear;
 }
 
 .bounce {
