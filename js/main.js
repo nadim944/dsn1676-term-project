@@ -4,6 +4,11 @@ var $reverseBtn = $('.reverse-btn');
 var $playBtn2 = $('.play-btn2');
 var $fastForwardbtn = $('.fast-forward-btn');
 
+var $footer = $(".footer");
+
+$panel.localScroll();
+
+
 $navBtn.on('click', function () {
     $panel.toggleClass('js-panel-open');
 });
@@ -19,3 +24,5 @@ $playBtn2.on('click', function () {
 $fastForwardbtn.on('click', function () {
     $fastForwardbtn.toggleClass('move');
     });
+
+$footer.localScroll();

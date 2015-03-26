@@ -9,14 +9,14 @@
 </head>
 <body>
     
-    <button class="nav-btn"></button>
+    <button class="nav-btn" id="navtop"></button>
     
-    <div class="panel">
+    <div class="panel" >
         <ul class="grid">
-            <a href="#"><li class="unit unit-xs-1-4 unit-s-1-4 unit-m-1-3 unit-l-1-4">Home</li></a>
-            <a href="#"><li class="unit unit-xs-1-4 unit-s-1-4 unit-m-1-3 unit-l-1-4">Playlist</li></a>
-            <a href="#"><li class="unit unit-xs-1-4 unit-s-1-4 unit-m-1-3 unit-l-1-4">Explore</li></a>
-            <a href="#"><li class="unit unit-xs-1-4 unit-s-1-4 unit-m-1-3 unit-l-1-4">Sign&nbsp;In</li></a>
+            <a href="#reverse"><li class="unit unit-xs-1-4 unit-s-1-4 unit-m-1-3 unit-l-1-4">Home</li></a>
+            <a href="#reverse"><li class="unit unit-xs-1-4 unit-s-1-4 unit-m-1-3 unit-l-1-4">Playlist</li></a>
+            <a href="#reverse"><li class="unit unit-xs-1-4 unit-s-1-4 unit-m-1-3 unit-l-1-4">Explore</li></a>
+            <a href="#reverse"><li class="unit unit-xs-1-4 unit-s-1-4 unit-m-1-3 unit-l-1-4">Sign&nbsp;In</li></a>
         </ul>
 </div>
                                                                
@@ -46,7 +46,7 @@ share their tracks on SoundCloud.</p>
      </div>
     
     <div class="music-player grid">
-        <div class="unit unit-xs-1-3 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+        <div class="unit unit-xs-1-3 unit-s-1-3 unit-m-1-3 unit-l-1-3" id="reverse">
                <a href="#">
                    <img class="reverse-btn" src="images/reverse-button.svg" alt="reverse-btn"</a>
            </div>
@@ -61,8 +61,15 @@ share their tracks on SoundCloud.</p>
                    <img class="fast-forward-btn" src="images/fast-forward.svg" alt="fast-forward-btn">                    </a> 
                </div>
         </div> 
+    <footer class="footer">
+         <a href="#navtop"><img class="play-button-footer" src="images/play-button.svg" alt="play-button"></a>
+     </footer>
+        
+       
         
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
     <script src="js/main.js"></script>    
 </body>
 </html>
