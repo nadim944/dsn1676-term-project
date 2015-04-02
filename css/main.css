@@ -363,12 +363,13 @@ a:visited {
     width: 20%;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    transform: rotate(180);
-    
+    -webkit-transform: rotate(180); 
+    transform: rotate(180); 
 }
 
 .footer {
     text-align: center;
+    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
