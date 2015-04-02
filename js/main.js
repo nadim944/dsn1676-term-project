@@ -5,6 +5,7 @@ var $playBtn2 = $('.play-btn2');
 var $fastForwardbtn = $('.fast-forward-btn');
 
 var $footer = $(".footer");
+var $banner = $(".banner");
 
 $panel.localScroll();
 
@@ -26,3 +27,6 @@ $fastForwardbtn.on('click', function () {
     });
 
 $footer.localScroll();
+
+
+$banner.localScroll();
