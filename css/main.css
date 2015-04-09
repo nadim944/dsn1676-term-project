@@ -465,12 +465,12 @@ a:visited {
     width: 40%;
 }
 
-.icon:hover #left_music_notes {
+.icon #left_music_notes {
     transform: scale(2);
 animation: bump 1s linear infinite;
 }
 
-.icon:hover #right_music_notes {
+.icon #right_music_notes {
      transform: scale(2);
 animation: bump 1s linear infinite; 
 }
