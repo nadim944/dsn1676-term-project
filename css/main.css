@@ -451,3 +451,42 @@ a:visited {
         transform: translate(-250px, -20px);
     }
 }
+
+.icon {
+    top: 30px;
+    position: relative;
+    overflow: visible;
+    left: 70px;
+    right: 70px;  
+}
+
+.icon-link {
+    text-align: center;
+    width: 40%;
+}
+
+.icon:hover #left_music_notes {
+    transform: scale(2);
+animation: bump 1s linear infinite;
+}
+
+.icon:hover #right_music_notes {
+     transform: scale(2);
+animation: bump 1s linear infinite; 
+}
+
+@keyframes bump {
+    0% {
+        transform: translate(0);
+    }
+     30% {
+        transform: translate(20px);
+    }
+     70% {
+        transform: translate(-20px);
+    }
+     100% {
+        transform: translate(0);
+    }
+
+}
