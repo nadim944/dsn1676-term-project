@@ -6,9 +6,18 @@ var $fastForwardbtn = $('.fast-forward-btn');
 
 var $footer = $(".footer");
 var $banner = $(".banner");
+var $iconLink = $('.icon-link');
+
+$iconLink.waypoint(function () {
+    console.log('here');
+    $iconLink.toggleClass('js-active');
+},{offset: '60%' });
 
 $panel.localScroll();
 
+$footer.localScroll();
+
+$banner.localScroll();
 
 $navBtn.on('click', function () {
     $panel.toggleClass('js-panel-open');
@@ -25,8 +34,3 @@ $playBtn2.on('click', function () {
 $fastForwardbtn.on('click', function () {
     $fastForwardbtn.toggleClass('move');
     });
-
-$footer.localScroll();
-
-
-$banner.localScroll();
