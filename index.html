@@ -2,25 +2,27 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Sound Cloud</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/main.css" rel="stylesheet">
+    <title>Sound Cloud</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="images/favicon-icon.png">
+    <link rel="shortcut" href="images/favicon-shortcut.png">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
 </head>
 <body>
     
-    <button class="nav-btn" id="navtop"></button>
+     <button class="nav-btn" id="nav"></button>
     
-    <div class="panel" >
+    <nav class="panel" role="nav">
         <ul class="grid">
             <a href="#reverse"><li class="unit unit-xs-1-4 unit-s-1-4 unit-m-1-3 unit-l-1-4">Home</li></a>
             <a href="#reverse"><li class="unit unit-xs-1-4 unit-s-1-4 unit-m-1-3 unit-l-1-4">Playlist</li></a>
             <a href="#reverse"><li class="unit unit-xs-1-4 unit-s-1-4 unit-m-1-3 unit-l-1-4">Explore</li></a>
             <a href="#reverse"><li class="unit unit-xs-1-4 unit-s-1-4 unit-m-1-3 unit-l-1-4">Sign&nbsp;In</li></a>
         </ul>
-</div>
-                                                               
-    <div class="banner">
+</nav>
+                                                            
+    <div class="banner" id="banner" role="banner">
 	
         <img class="logo color" src="images/banner.svg" alt="banner"> 
     <div class="bar-wrapper">
@@ -38,9 +40,11 @@
         </div>
     </div> 
         
-        <h1  class="">Sound Cloud</h1>
+        <main role="main" id="main">
+        <h1>Sound Cloud</h1>
          <p class="subhead">Hear the world’s sounds Little Simz and millions of other artists
 share their tracks on SoundCloud.</p>
+        </main>
         
         <a href="#play-button-footer"><img class="play-button" src="images/play-button.svg" alt="play-button-footer"></a>
      </div>
@@ -51,23 +55,22 @@ share their tracks on SoundCloud.</p>
                    <img class="reverse-btn" src="images/reverse-button.svg" alt="reverse-btn"</a>
            </div>
                
-               <div  class="unit unit-xs-1-3  unit-s-1-3 unit-m-1-3 unit-l-1-3">
+               <div  class="unit unit-xs-1-3  unit-s-1-3 unit-m-1-3 unit-l-1-3" id="play">
                <a href="#">
                    <img class="play-btn2 animated" src="images/play-button-2.svg" alt="play-btn2"></a>
             </div>
     
-           <div  class="unit unit-xs-1-3 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+           <div  class="unit unit-xs-1-3 unit-s-1-3 unit-m-1-3 unit-l-1-3" id="fast-forward">
                <a href="#">
                    <img class="fast-forward-btn" src="images/fast-forward.svg" alt="fast-forward-btn"></a> 
                </div>
         </div> 
         
-        
         <div class="content">
         <h2></h2>
         </div>
         
-                <div class="icon-link" href="#">
+                <div class="icon-link" href="#" role="complementary">
 <svg class="icon" version="1.1" id="layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 317.6 272.9" enable-background="new 0 0 317.6 272.9" xml:space="preserve">
 <path id="headphones" d="M236.8,190.8c2.3-16.7,7.8-33.1,5.8-50.3c-1.8-15-8.7-27.4-18.9-38.4c-18.3-19.6-41.4-25.3-67.1-24.3
@@ -124,7 +127,7 @@ share their tracks on SoundCloud.</p>
 </svg>
         </div>
         
-    <footer class="footer" id="play-button-footer">
+    <footer class="footer" role="contentinfo" id="play-button-footer">
          <a href="#navtop"><img class="play-button" src="images/play-button.svg" alt="play-button"></a>
      </footer>
           
