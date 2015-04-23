@@ -36,6 +36,26 @@ h1 {
     transform: translateY(60px);
 }
 
+.skip-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skip-links a {
+    position: absolute;
+    top: -4em;
+    background-color: #CC6633;
+    color: #fff;
+    padding: 0.5em 0.75em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.skip-links a:focus {
+    top: 0;
+}
+
 .subhead {
     position: relative;
     top: 2em;
