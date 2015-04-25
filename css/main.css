@@ -50,6 +50,7 @@ h1 {
     padding: 0.5em 0.75em;
     font-weight: bold;
     text-decoration: none;
+    z-index: 1000;
 }
 
 .skip-links a:focus {
